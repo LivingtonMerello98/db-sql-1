@@ -75,3 +75,11 @@ Quanti sono gli insegnanti che non hanno un numero di telefono? (50)
  SELECT COUNT(*)
 FROM `teachers`
 WHERE `phone` IS NULL OR `phone` = '';
+
+ /******************************************  /  
+
+Inserire nella tabella degli studenti un nuovo record con i propri dati (per il campo
+degree_id, inserire un valore casuale)
+
+ INSERT INTO students (degree_id, name, surname, date_of_birth, fiscal_code, enrolment_date, registration_number, email)
+VALUES (FLOOR(RAND() * 100) + 1, 'Luca', 'Rossi', '1999-10-01', 'ABCDEF09A01B456C', '2024-07-01', '123456', 'luca.rossi@gmail.com');

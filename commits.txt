@@ -91,3 +91,13 @@ VALUES (FLOOR(RAND() * 100) + 1, 'Luca', 'Rossi', '1999-10-01', 'ABCDEF09A01B456
 UPDATE `teachers`
 SET office_number = '126'
 WHERE `name` = 'Pietro' AND `surname` = 'Rizzo';
+
+ /******************************************  /  
+
+Eliminare dalla tabella studenti il record creato precedentemente al punto 9
+
+DELETE
+FROM
+    `students`
+WHERE
+    `id` = 5001;
